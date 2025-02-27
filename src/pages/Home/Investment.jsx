@@ -1,7 +1,7 @@
-import BgOverlayGradient from "../../assets/images/bg-overlay-gradient.png";
-import InvestmentBg from "../../assets/images/he-sinh-thai_amiInvestment.webp";
-import BgOverlaySectionInvestment from "../../assets/images/bg-overlay-section-investment.png";
-import BgTeamworkSectionInvestment from "../../assets/images/bg-teamwork-section-investment.webp";
+import BgOverlayGradient from "@/assets/images/bg-overlay-gradient.png";
+import InvestmentBg from "@/assets/images/he-sinh-thai_amiInvestment.webp";
+import BgOverlaySectionInvestment from "@/assets/images/bg-overlay-section-investment.png";
+import BgTeamworkSectionInvestment from "@/assets/images/bg-teamwork-section-investment.webp";
 
 export default function Investment() {
   return (

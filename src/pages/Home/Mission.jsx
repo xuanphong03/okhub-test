@@ -1,9 +1,9 @@
 import * as motion from "motion/react-client";
-import MissionImage1 from "../../assets/images/section-mission-item-1.webp";
-import MissionImage2 from "../../assets/images/section-mission-item-2.webp";
-import MissionImage3 from "../../assets/images/section-mission-item-3.webp";
-import MissionImage4 from "../../assets/images/section-mission-item-4.webp";
-import MissionIcon1 from "../../assets/images/mission-icon-1.svg";
+import MissionImage1 from "@/assets/images/section-mission-item-1.webp";
+import MissionImage2 from "@/assets/images/section-mission-item-2.webp";
+import MissionImage3 from "@/assets/images/section-mission-item-3.webp";
+import MissionImage4 from "@/assets/images/section-mission-item-4.webp";
+import MissionIcon1 from "@/assets/images/mission-icon-1.svg";
 
 import { useEffect, useRef, useState } from "react";
 

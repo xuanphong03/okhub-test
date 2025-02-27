@@ -3,7 +3,7 @@ import Introduction from "./Introduction";
 import Investment from "./Investment";
 import Mission from "./Mission";
 import Vision from "./Vision";
-import "./Home.css";
+// import "./Home.css";
 
 export default function HomePage() {
   return (

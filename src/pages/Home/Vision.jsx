@@ -1,5 +1,5 @@
-import BgVisionSection from "../../assets/images/bg-vision-section.png";
-import BgVisionSectionMobile from "../../assets/images/section-tam-nhin-bg-mobile.png";
+import BgVisionSection from "@/assets/images/bg-vision-section.png";
+import BgVisionSectionMobile from "@/assets/images/section-tam-nhin-bg-mobile.png";
 
 import * as motion from "motion/react-client";
 
