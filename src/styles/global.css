@@ -3,25 +3,27 @@
 
 @theme {
   /* Config Responsive */
-  --breakpoint-*: initial;
-  --breakpoint-tablet: 40rem;
-  --breakpoint-laptop: 64rem;
-  --breakpoint-desktop: 88rem;
+  --breakpoint-sm: 540px;
+  --breakpoint-md: 720px;
+  --breakpoint-lg: 960px;
+  --breakpoint-xl: 1140px;
+  --breakpoint-2xl: 1320px;
   /* Font */
   --font-quicksand: "Quicksand", sans-serif;
   --font-inter: "Inter", sans-serif;
   --bg-toggle-btn: rgba(35, 31, 32, 0.13);
   --primary-color: #2f2e79;
+  --secondary-color: #165bb8;
   --bg-section-friendship: linear-gradient(
     110deg,
     rgba(47, 46, 121, 0.2) 10.86%,
     rgba(0, 0, 0, 0) 47.66%
   );
-  --bg-section-mission: background: linear-gradient(
-      0deg,
-      rgba(47, 46, 121, 0.11) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
+  --bg-section-mission: linear-gradient(
+    0deg,
+    rgba(47, 46, 121, 0.11) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
   --text-color-title-mission-section: #165bb8;
   --text-color-desc-mission-section: #011942;
 }

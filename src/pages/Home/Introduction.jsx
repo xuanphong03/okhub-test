@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import IntroBanner from "../../assets/images/IntroBanner.svg";
+import IntroductionBanner from "../../assets/images/IntroBanner.svg";
 
 export default function Introduction() {
   const containerVariants = {
@@ -19,18 +19,21 @@ export default function Introduction() {
   };
 
   return (
-    <section id="intro">
-      <div className="relative">
-        <img
-          src={IntroBanner}
-          alt="Introduction banner"
-          className="h-screen w-screen object-cover"
-        />
+    <section
+      id="introduction-section"
+      className="relative h-[80vh] sm:h-screen lg:hidden 2xl:block"
+    >
+      <img
+        alt=""
+        src={IntroductionBanner}
+        className="h-full w-full object-cover object-[80%]"
+      />
+      <div className="relative container mx-auto">
         <motion.h1
           variants={containerVariants}
           initial="initial"
           animate="animate"
-          className="absolute bottom-16 left-24 text-7xl leading-tight font-bold text-white uppercase"
+          className="absolute bottom-0 p-4 text-[28px] leading-tight font-bold text-white uppercase sm:text-5xl xl:pb-10 xl:text-6xl"
         >
           {["Đồng", "hành"].map((word, index) => (
             <motion.span
