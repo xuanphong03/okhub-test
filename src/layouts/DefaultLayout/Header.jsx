@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "@/assets/images/logo.svg";
 
 export default function Header() {
   const [showHeader, setShowHeader] = useState(() => window.scrollY <= 0);
@@ -37,7 +36,7 @@ export default function Header() {
         >
           <img
             alt="logo"
-            src={Logo}
+            src="https://amigroup.com.vn/wp-content/uploads/2024/07/logo-blue.svg"
             className={`max-w-full object-center ${onScrollYTop ? "h-8 sm:h-14 md:h-16 2xl:h-32" : "h-8 sm:h-14 md:h-16 2xl:h-20"}`}
           />
         </Link>
