@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Config Responsive */
+  --breakpoint-*: initial;
+  --breakpoint-tablet: 40rem;
+  --breakpoint-laptop: 64rem;
+  --breakpoint-desktop: 88rem;
+  /* Font */
+  --font-quicksand: "Quicksand", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --bg-toggle-btn: rgba(35, 31, 32, 0.13);
+  --primary-color: #2f2e79;
+  --bg-section-friendship: linear-gradient(
+    110deg,
+    rgba(47, 46, 121, 0.2) 10.86%,
+    rgba(0, 0, 0, 0) 47.66%
+  );
+  --bg-section-mission: background: linear-gradient(
+      0deg,
+      rgba(47, 46, 121, 0.11) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  --text-color-title-mission-section: #165bb8;
+  --text-color-desc-mission-section: #011942;
+}
