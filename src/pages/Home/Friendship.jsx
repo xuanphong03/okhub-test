@@ -26,16 +26,16 @@ export default function Friendship() {
             duration: 0.75,
           }}
           src={TeamworkBanner}
-          className="h-full max-w-full object-cover object-right-bottom"
+          className="h-full max-full object-cover object-right-bottom"
         />
       </div>
       <img
         src={VectorTeamwork1}
-        className="pointer-events-none absolute right-0 bottom-0 left-0 z-[2] hidden h-fit translate-y-[3rem] object-cover lg:inline-block xl:translate-y-[4rem] 2xl:translate-y-[5.25rem]"
+        className="pointer-events-none absolute  w-full right-0 bottom-0 left-0 z-[2] hidden h-fit translate-y-[3rem] object-cover lg:inline-block xl:translate-y-[4rem] 2xl:translate-y-[5.25rem]"
       />
       <img
         src={VectorTeamwork2}
-        className="pointer-events-none absolute right-0 bottom-0 left-0 z-[2] hidden h-fit translate-y-[4.25rem] object-cover lg:inline-block xl:translate-y-[5.25rem] 2xl:translate-y-[6.5rem]"
+        className="pointer-events-none absolute w-full right-0 bottom-0 left-0 z-[2] hidden h-fit translate-y-[4.25rem] object-cover lg:inline-block xl:translate-y-[5.25rem] 2xl:translate-y-[6.5rem]"
       />
       <img
         alt="Teamwork"
