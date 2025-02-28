@@ -7,8 +7,8 @@ import { createContext, useEffect, useRef, useState } from "react";
 export const AppContext = createContext();
 
 export default function App() {
-  const [scrollingDown, setScrollingDown] = useState(false);
-  const [isPositionTop, setIsPositionTop] = useState(false);
+  const [scrollingDown, setScrollingDown] = useState(() => window.scrollY <= 0);
+  const [isPositionTop, setIsPositionTop] = useState(() => window.scrollY <= 0);
   const lastPositionY = useRef(0);
   useEffect(() => {
     const handleScroll = () => {
