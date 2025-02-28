@@ -1,5 +1,16 @@
 import IntroductionBanner from "@/assets/images/intro-banner.svg";
 import { motion } from "framer-motion";
+import PropTypes from "prop-types";
+
+const AnimatedWord = ({ word, variants }) => (
+  <motion.span variants={variants} className="mr-2 inline-block">
+    {word}
+  </motion.span>
+);
+AnimatedWord.propTypes = {
+  word: PropTypes.string.isRequired,
+  variants: PropTypes.object.isRequired,
+};
 
 export default function Introduction() {
   const containerVariants = {
@@ -18,6 +29,9 @@ export default function Introduction() {
     },
   };
 
+  const wordsFirstLine = ["Đồng", "hành"];
+  const wordsSecondLine = ["khởi", "thịnh", "vượng"];
+
   return (
     <section
       id="introduction-section"
@@ -35,24 +49,12 @@ export default function Introduction() {
           animate="animate"
           className="absolute bottom-0 p-4 text-[28px] leading-tight font-bold text-white uppercase sm:text-5xl xl:pb-10 xl:text-6xl"
         >
-          {["Đồng", "hành"].map((word, index) => (
-            <motion.span
-              key={index}
-              variants={wordVariants}
-              className="mr-2 inline-block"
-            >
-              {word}
-            </motion.span>
-          ))}{" "}
+          {wordsFirstLine.map((word, index) => (
+            <AnimatedWord key={index} word={word} variants={wordVariants} />
+          ))}
           <br />
-          {["khởi", "thịnh", "vượng"].map((word, index) => (
-            <motion.span
-              key={index}
-              variants={wordVariants}
-              className="mr-2 inline-block"
-            >
-              {word}
-            </motion.span>
+          {wordsSecondLine.map((word, index) => (
+            <AnimatedWord key={index} word={word} variants={wordVariants} />
           ))}
         </motion.h1>
       </div>
