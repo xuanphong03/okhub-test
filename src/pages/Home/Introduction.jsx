@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
 import IntroductionBanner from "@/assets/images/intro-banner.svg";
+import { motion } from "framer-motion";
 
 export default function Introduction() {
   const containerVariants = {
