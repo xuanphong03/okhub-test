@@ -1,3 +1,4 @@
+import Achievement from "./Achievement";
 import Friendship from "./Friendship";
 import Introduction from "./Introduction";
 import Investment from "./Investment";
@@ -13,6 +14,7 @@ export default function HomePage() {
       <Vision />
       <Mission />
       <Investment />
+      <Achievement />
     </>
   );
 }

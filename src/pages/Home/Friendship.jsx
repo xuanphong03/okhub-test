@@ -19,11 +19,11 @@ export default function Friendship() {
       />
       <div className="pointer-events-none absolute inset-0 z-[1] hidden overflow-hidden lg:inline-block">
         <motion.img
-          initial={{ opacity: 0, scale: 1.2 }}
+          initial={{ opacity: 0, scale: 1.1 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true, amount: 0.175 }}
+          viewport={{ once: true, amount: 0.25 }}
           transition={{
-            duration: 0.5,
+            duration: 0.75,
           }}
           src={TeamworkBanner}
           className="h-full max-w-full object-cover object-right-bottom"
@@ -108,7 +108,7 @@ export default function Friendship() {
           >
             <Link
               to="#"
-              className="inline-flex cursor-pointer items-center gap-2 rounded-full bg-[var(--primary-color)] px-8 py-4 text-sm font-bold uppercase sm:text-xl md:text-2xl lg:text-[10px] xl:text-xs 2xl:text-base"
+              className="inline-flex cursor-pointer items-center gap-2 rounded-full bg-[var(--primary-color)] px-8 py-4 text-sm font-bold uppercase transition-colors duration-500 hover:bg-red-500 sm:text-xl md:text-2xl lg:text-[10px] xl:text-xs 2xl:text-base"
             >
               Hành trình của AMI&M
               <img

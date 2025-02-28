@@ -1,3 +1,4 @@
+import * as motion from "motion/react-client";
 import BgOverlayGradient from "@/assets/images/bg-overlay-gradient.png";
 import InvestmentBg from "@/assets/images/he-sinh-thai_amiInvestment.webp";
 import BgOverlaySectionInvestment from "@/assets/images/bg-overlay-section-investment.png";
@@ -29,18 +30,42 @@ export default function Investment() {
       </div>
       <div className="flex">
         <div className="font-inter basis-1/2">
-          <h2 className="mb-2 text-base font-semibold tracking-[0.01rem] text-[#165BB8] uppercase">
+          <motion.h2
+            initial={{ opacity: 0, translateY: "100%" }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.4,
+            }}
+            className="mb-2 text-base font-semibold tracking-[0.01rem] text-[#165BB8] uppercase"
+          >
             Lĩnh vực đầu tư
-          </h2>
-          <h3 className="mb-2 w-lg bg-gradient-to-r from-[#328AE2] to-[#FF0D39] bg-clip-text text-[2rem] leading-[2.4rem] font-bold tracking-[-0.08rem] text-transparent">
+          </motion.h2>
+          <motion.h3
+            initial={{ opacity: 0, translateY: "100%" }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.4,
+            }}
+            className="mb-2 w-lg bg-gradient-to-r from-[#328AE2] to-[#FF0D39] bg-clip-text text-[2rem] leading-[2.4rem] font-bold tracking-[-0.08rem] text-transparent"
+          >
             Ami&M là đối tác tư vấn - đầu tư bền vững, phát triển dịch vụ cao
             cấp và nâng tầm giáo dục trải nghiệm.
-          </h3>
-          <p className="w-[30rem] text-lg font-medium tracking-tight text-[#333]">
+          </motion.h3>
+          <motion.p
+            initial={{ opacity: 0, translateY: "100%" }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.4,
+            }}
+            className="w-[30rem] text-lg font-medium tracking-tight text-[#333]"
+          >
             Với hệ sinh thái tối ưu, Ami&M truyền cảm hứng xây dựng sự thịnh
             vượng đích thực cho những Người đồng hành và tạo lập di sản xứng tầm
             cho thế hệ tương lai.{" "}
-          </p>
+          </motion.p>
         </div>
         <div className="basis-1/2">
           <div></div>

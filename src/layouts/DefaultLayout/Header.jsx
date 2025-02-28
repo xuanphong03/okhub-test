@@ -1,43 +1,23 @@
-import { useEffect, useRef, useState } from "react";
+import { AppContext } from "@/App";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 
 export default function Header() {
-  const [showHeader, setShowHeader] = useState(() => window.scrollY <= 0);
-  const [onScrollYTop, setOnScrollYTop] = useState(true);
-  const lastScrollY = useRef(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY.current) {
-        setShowHeader(false);
-        setOnScrollYTop(false);
-      } else {
-        setShowHeader(true);
-        if (currentScrollY <= 0) {
-          setOnScrollYTop(true);
-        }
-      }
-
-      lastScrollY.current = currentScrollY;
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const { scrollingDown, isPositionTop } = useContext(AppContext);
 
   return (
     <header
-      className={`font-quicksand fixed top-0 right-0 left-0 z-50 transition-all duration-500 ${!onScrollYTop && showHeader ? "bg-white" : ""} ${showHeader ? "translate-y-0" : "-translate-y-full"}`}
+      className={`font-quicksand fixed top-0 right-0 left-0 z-50 transition-all duration-500 ${!isPositionTop && scrollingDown ? "bg-white shadow" : ""} ${scrollingDown ? "translate-y-0" : "-translate-y-full"}`}
     >
       <div className="container mx-auto flex items-start justify-between px-5 py-3">
         <Link
           to="/"
-          className={`shrink-0 origin-top-left transition-all duration-500 ${showHeader ? "scale-100" : "scale-0"}`}
+          className={`shrink-0 origin-top-left transition-all duration-500 ${scrollingDown ? "scale-100" : "scale-0"}`}
         >
           <img
             alt="logo"
             src="https://amigroup.com.vn/wp-content/uploads/2024/07/logo-blue.svg"
-            className={`max-w-full object-center ${onScrollYTop ? "h-8 sm:h-14 md:h-16 2xl:h-32" : "h-8 sm:h-14 md:h-16 2xl:h-20"}`}
+            className={`max-w-full object-center ${isPositionTop ? "h-8 sm:h-14 md:h-16 2xl:h-32" : "h-8 sm:h-14 md:h-16 2xl:h-20"}`}
           />
         </Link>
         <div className="flex items-center gap-2">
